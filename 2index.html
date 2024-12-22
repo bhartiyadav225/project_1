@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .navbar{
+            height: auto;
+            width: auto;
+            padding: 15px;
+            background-color: #daac00;
+            display: flex;
+            align-items:center;
+            justify-content: space-around;
+            
+        }
+        .logo{
+            height: 70px;
+            width: 200px;
+            background-image:url(../company\ logo.png) ;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+        }
+        li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            font-size: 29px;
+            font-size: 29px;
+            color: #ffffff;
+            font-weight: 500;
+            font-family: "Poppins";
+          }
+        .search-bar{
+            height: 50px;
+            width: 250px;
+            background-color: #fcc302;
+            display: flex;
+        }
+        .search-bar > .search-bar-1{
+            height: 50px;
+            width: 200px;
+            background-color: #fcc302;
+        }
+        .search-bar-1 > input{
+            height: 50px;
+            width: 200px;
+            background-color: #fcc302;
+            border: none;
+        }
+        input::placeholder{
+            color: white;
+        }
+        input:focus{
+            outline: none;
+        }
+        .search-bar-2{
+            height: 50px;
+            width: 50px;
+            background-color: #00bec9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .search-bar-2 > .fa-solid{
+            color: white;
+        }
+        @media only screen and (max-width:600) {
+            .navbar{
+            height: auto;
+            width: auto;
+            padding: 15px;
+            background-color: #daac00;
+            display: flex;
+            align-items:center;
+            justify-content: space-around;
+            flex-direction: column;
+            gap: 35px;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+        }
+    }
+    .sec-1{
+        height: auto;
+        width: auto;
+        background-color: #fcc302;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .sec-1 > .sub-1{
+        height: 500px;
+        width: 500px;
+       /* border: 2px solid red;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .sec-1 > .sub-2{
+        height: 200px;
+        width: 400px;
+       
+      
+       /* border: 2px solid red;*/
+    }
+    .sub-2 >img{
+        height: 500px;
+        width: 300px;
+    }
+    .para-1{
+        height: auto;
+        width: 600px;
+    }
+    .para-1{
+        height: auto;
+        width: 600px;
+       /* border: 2px solid red;*/
+    }
+    .para-1>p {
+        font-size: 67px;
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-weight: 600;
+        font-family: "Poppins";
+    }
+    .para-2>p {
+        font-size: 19px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "poppins";
+    }
+    .para-2{
+        height: auto;
+        width: 600px;
+       /* border: 2px solid red;*/
+    }
+    .para-3>.btn-1{
+        height: 69px;
+        width: 182px;
+        border-radius: 7px;
+        background-color: #00bec9;
+        color: white;
+    }
+    .para-3{
+        height: 100px;
+        width: 600px;
+       /* border: 2px solid red;*/
+        display: flex;
+        gap: 35px;
+    }
+    .para-3>.btn-2 {
+        width: 183px;
+        height: 69px;
+        border-radius: 7px;
+        background-color: #daac00;
+        color: #ffffff;
+        border: 3px solid #ffffff;
+    
+    }
+
+    @media only screen and (max-width:600){
+        .sec-1{
+        height: auto;
+        width: auto;
+        background-color: #fcc302;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    }
+    .sec-3{
+        height: 100%;
+        width: 100%;
+        background-color:#ffffff;
+    }
+    .sec-3 > .sub-5{
+        height: 500px;
+        width: 600px;
+      /*  border: 2px solid red;*/
+        padding: 30px;
+    }
+    .para-4{
+        height: 160px;
+        width: 600px;
+    }
+    .para-4{
+        height: 130px;
+        width: 600px;
+       /* border: 2px solid red;*/
+    }
+    .para-4>p {
+        font-size: 50px;
+        color: #313243;
+        font-weight: 600;
+        font-family: "Poppins";
+    }
+    .para-5>p {
+        font-size: 26px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+    }
+    .para-5{
+        height: 130px; 
+        width: 600px;
+       /* border: 20px solid red;*/
+       padding: 15px;
+    }
+    .para-6 > .btn-3{
+        width: 182px;
+        height: 60px;
+        border-radius: 7px;
+        background-color: #fcc302;
+    }
+    @media only screen and (max-width:600){
+        .sec-3{
+        height: 100%;
+        width: 100%;
+        background-color:#ffffff;
+    }
+    .sec-3 > .sub-5{
+        height: 500px;
+        width: 600px;
+      /*  border: 2px solid red;*/
+        padding: 30px;
+    }
+    .para-4{
+        height: 160px;
+        width: 600px;
+    }
+    .para-4{
+        height: 130px;
+        width: 600px;
+       /* border: 2px solid red;*/
+    }
+    .para-4>p {
+        font-size: 50px;
+        color: #313243;
+        font-weight: 600;
+        font-family: "Poppins";
+    }
+    .para-5>p {
+        font-size: 26px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+    }
+    .para-5{
+        height: 130px; 
+        width: 600px;
+       /* border: 20px solid red;*/
+       padding: 15px;
+    }
+    .para-6 > .btn-3{
+        width: 182px;
+        height: 60px;
+        border-radius: 7px;
+        background-color: #fcc302;
+    }
+}
+
+    .sec-4{
+        height: auto;
+        width: auto;
+    }
+    .sec-4>.sub-4{
+        opacity: 0.569;
+        width: 506px;
+        height: 480px;
+        background-color: rgba(218,172,0,0.5686274509803921);
+        
+    }
+    .sec-4> {
+        width: 506px;
+        height: 480px;
+        background-color: #daac00;
+       
+    }
+    .sec-5{
+        width: 1900px;
+        height: 800px;
+        background-color: #fcc302;
+    }
+    
+    .para-7{
+        font-size: 70px;
+        color: #ffffff;
+        font-weight: 650;
+        font-family: "Poppins";
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+
+    }
+    .para-7>p{
+        font-size:80px ;
+        padding-top: 20px;
+    }
+   
+            
+    
+    .para-8{
+        height: auto;
+        width: 600px;
+}
+   .para-8>p{
+    font-size: 27px;
+     color: #ffffff;
+      font-weight: 100px;
+     font-family: "Poppins";
+      width: 600px;
+     margin-left: 100%;
+     line-height: 50px;
+     padding: 5%;
+       
+    }
+    .box-1{
+        width: 330px;
+        height: 355px;
+        background-color: #d1d1d1;
+        border: 6px solid #ffffff;
+        margin-top: 16%;
+        margin-left: 10%;
+        display: flex;
+        gap: 300px;
+    }
+    .box-1>img{
+        width: 340px;
+        height: 350px;
+    }
+    
+    .box-2{
+        width: 336px;
+        height: 355px;
+        background-color: #d1d1d1;
+        border: 6px solid #ffffff;
+        margin-top: auto;
+        margin-left: 10%;
+        display: flex;
+        gap: 300px;
+    }
+    .box-2>img{
+        width: 340px;
+        height: 350px;
+    }
+    .box-3{
+        width: 330px;
+        height: 355px;
+        background-color: #d1d1d1;
+        border: 6px solid #ffffff;
+        margin-top: auto;
+        margin-left: 10%;
+        display: flex;
+        gap: 300px;
+    }
+    .box-3>img{
+        width: 340px;
+        height: 350px;
+    }
+    .sec-6{
+        height: auto;
+        width: 100%;
+        background-color:white;
+        float:right;
+    }
+    .sec-6 > .sub-5{
+        height: 500px;
+        width: 600px;
+      /*  border: 2px solid red;*/
+        padding: 30px;
+    }
+    .para-9{
+        height: 160px;
+        width: 600px;
+    }
+    .para-4{
+        height: 130px;
+        width: 600px;
+       /* border: 2px solid red;*/
+    }
+    .para-9>p {
+        font-size: 50px;
+        color: #313243;
+        font-weight: 600;
+        font-family: "Poppins";
+    }
+    .para-10>p {
+        font-size: 26px;
+        color: #313243;
+        font-weight: 700;
+        font-family: "Poppins";
+    }
+    .para-10{
+        height: 130px; 
+        width: 600px;
+       /* border: 20px solid red;*/
+       padding: 15px;
+    }
+    .para-11 > .btn-3{
+        width: 182px;
+        height: 60px;
+        border-radius: 7px;
+        background-color: #fcc302;
+    }
+    .sec-7{
+        width: 1900px;
+        height: 1120px;
+        background-color: #fcc302;
+       
+
+    }
+    .para-12{
+        font-size: 70px;
+        color: #ffffff;
+        font-weight: 650;
+        font-family: "Poppins";
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+
+    }
+    .para-12>p{
+        font-size:80px ;
+        padding-top: 20px;
+    }
+
+    .para-13> p{
+        font-size: 33px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+        
+     
+    }
+    .box-4{
+        width: 300px;
+        height: 300px;
+        background-color: #d1d1d1;
+        border: 1px solid #ffffff;
+        margin-left: 10%;
+        margin-top: 50px;
+
+    }
+    .box-4>img{
+        width: 300px;
+        height: 300px;
+       
+    }
+    .price{
+        margin: 20px 0;
+    }
+    .price .original{
+        text-decoration: line-through;
+        color: #888;
+        margin-right: 20px;
+    }
+    .price .discounted{
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+       
+    }
+    .buy-now{
+        background-color: #00bec9;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+       
+    }
+    .box-5{
+        width: 300px;
+        height: 300px;
+        background-color: #d1d1d1;
+        border: 1px solid #ffffff;
+        
+        position: absolute;
+        right: 42%;
+        top: 255%;
+    
+
+    }
+    .box-5>img{
+        width: 300px;
+        height: 300px;
+       
+    }
+    .price2{
+        margin: 20px 0;
+        
+    }
+    .price2 .original{
+        text-decoration: line-through;
+        color: #888;
+        margin-right: 20px;
+        padding: 20px;
+        
+    }
+    .price2 .discounted{
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+        padding: 20px;
+    
+       
+    }
+    .buy-now2{    
+        background-color: #00bec9;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+       
+    }
+    .box-6{
+        width: 300px;
+        height: 300px;
+        background-color: #d1d1d1;
+        border: 1px solid #ffffff;
+        
+        position: absolute;
+        right: 10%;
+        top: 255%;
+    
+
+    }
+    .box-6>img{
+        width: 300px;
+        height: 300px;
+       
+    }
+    .price3{
+        margin: 20px 0;
+        
+    }
+    .price3 .original{
+        text-decoration: line-through;
+        color: #888;
+        margin-right: 20px;
+        padding: 20px;
+        
+    }
+    .price3 .discounted{
+        font-size: 30px;
+        font-weight: bold;
+        color: #333;
+        padding: 20px;
+    
+       
+    }
+    .buy-now3{
+        background-color: #00bec9;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 16px;
+       
+    }
+    .sec-8{
+        width: 1900px;
+        height: 800px;
+        background-color: white;
+       
+
+    }
+    .para-14{
+        font-size: 70px;
+        color:black;
+        font-weight: 650;
+        font-family: "Poppins";
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+
+    }
+    .para-14>p{
+        font-size:80px ;
+        padding-top: 20px;
+    }
+    .para-15> p{
+        font-size: 33px;
+        color: #313243;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+    }
+    .box-7{
+        width: 330px;
+        height: 351px;
+        background-color: #d3d3d3;
+        position: absolute;
+        left: 10%;
+        top: 335%;
+    }
+    .box-7>img{
+        width: 330px;
+        height: 351px;
+
+    }
+    .name{
+        font-size: 29px;
+         color: #313243;
+         font-weight: 700;
+         font-family: "Poppins";
+         text-align: center;
+         padding: 10px;
+    }
+    .nameA{
+        font-size: 25px;
+        font-weight: 200;
+        padding: 4px;
+
+    }
+    .box-8{
+        width: 300px;
+        height: 351px;
+        background-color:whitesmoke;
+        position: absolute;
+        left: 40%;
+        top: 335%;
+       
+    }
+    .box-8>img{
+        width: 300px;
+        height: 351px;
+
+    }
+
+    .name2{
+        font-size: 29px;
+         color: #313243;
+         font-weight: 700;
+         font-family: "Poppins";
+         text-align: center;
+         padding: 10px;
+    }
+    .nameB{
+        font-size: 25px;
+        font-weight: 200;
+        padding: 4px;
+
+    }
+    .box-9{
+        width: 300px;
+        height: 351px;
+        background-color:whitesmoke;
+        position: absolute;
+        left: 70%;
+        top: 335%;
+       
+    }
+    .box-9>img{
+        width: 300px;
+        height: 351px;
+
+    }
+
+    .name3{
+        font-size: 29px;
+         color: #313243;
+         font-weight: 700;
+         font-family: "Poppins";
+         text-align: center;
+         padding: 10px;
+    }
+    .nameC{
+        font-size: 25px;
+        font-weight: 200;
+        padding: 4px;
+
+    }
+    .sec-9{
+        width: 1900px;
+        height: 800px;
+        background-color: #daac00;
+       
+
+    }
+    .para-16{
+        font-size: 70px;
+        color:white;
+        font-weight: 650;
+        font-family: "Poppins";
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+
+    }
+    .para-16>p{
+        font-size:80px ;
+        padding-top: 20px;
+    }
+    .para-17> p{
+        font-size: 33px;
+        color: white;
+        font-weight: 400;
+        font-family: "Poppins";
+        text-align: center;
+    }
+    .box-10{
+        width: 361px;
+        height: 351px;
+         background-color: #d3d3d3;
+         position: absolute;
+         top: 410%;
+         left: 10%;
+         border: 2px solid black;
+    }
+    .box-10>img{
+        width: 361px;
+        height: 351px;
+    }
+    .box-10>p{
+        font-size: 25px;
+color:white;
+font-weight: 600;
+font-family: "Poppins";
+padding: 5px;
+    }
+
+    .para-18{
+        font-size: 17px;
+color: blue;
+font-weight: 500;
+font-family: "Poppins";
+padding: 10px;
+    }
+    .para-19{
+        font-size: 17px;
+color: white;
+font-weight: 400;
+font-family: "Poppins";
+    }
+    .para-20{
+        font-size: 17px;
+color: blue;
+font-weight: 500;
+font-family: "Poppins";
+padding: 10px;
+    
+    }
+    .box-11{
+        width: 369px;
+        height: 351px;
+         background-color: #d3d3d3;
+        position: absolute;
+        top: 1%;
+        left: 150%;
+        border: 2px solid black;
+       
+    }
+    .box-11>img{
+        width: 369px;
+        height: 351px;
+    }
+    .box-11>p{
+        font-size: 25px;
+color:white;
+font-weight: 600;
+font-family: "Poppins";
+padding: 5px;
+    }
+    .para-21{
+        font-size: 17px;
+color: blue;
+font-weight: 500;
+font-family: "Poppins";
+padding: 10px;
+    }
+    .para-22{
+        font-size: 17px;
+color: white;
+font-weight: 400;
+font-family: "Poppins";
+    }
+    .para-23{
+        font-size: 17px;
+color: blue;
+font-weight: 500;
+font-family: "Poppins";
+padding: 10px;
+    
+    }
+    .box-12{
+        width: 361px;
+        height: 351px;
+         background-color: #d3d3d3;
+        position: absolute;
+        top: 1%;
+        left: 150%;
+        border: 2px solid black;
+       
+    }
+    .box-12>img{
+        width: 361px;
+        height: 351px;
+    }
+    .box-12>p{
+        font-size: 25px;
+color:white;
+font-weight: 600;
+font-family: "Poppins";
+padding: 5px;
+    }
+    .para-24{
+        font-size: 17px;
+color: blue;
+font-weight: 500;
+font-family: "Poppins";
+padding: 10px;
+    }
+    .para-25{
+        font-size: 17px;
+color: white;
+font-weight: 400;
+font-family: "Poppins";
+    }
+    .para-26{
+        font-size: 17px;
+color: blue;
+font-weight: 500;
+font-family: "Poppins";
+padding: 10px;
+    
+    }
+    .sec-10{
+        width: 1900px;
+height: 654px;
+background-color: #343434;
+    }
+    .para-27{
+        color:white;
+       
+        padding: 7%;
+       
+    }
+    .para-27>h1{
+        font-size: 50px;
+    }
+    .para-27>h3{
+        font-size: 20px;
+        font-size: 25px;
+line-height: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Poppins";
+
+    }
+
+    .para-28{
+        color:white;
+       
+      position: absolute;
+      top: 484%;
+    
+    left: 30%;
+      
+       
+    }
+    .para-28>h1{
+        font-size: 50px;
+       
+    }
+    .para-28>h3{
+        font-size: 20px;
+        font-size: 25px;
+line-height: 25px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Poppins";
+       
+    }
+    .para-29{
+       
+float: right;
+
+    }
+    .para-29>p{
+        font-size: 38px;
+line-height: 8px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Poppins";
+position: absolute;
+top: 485%;
+left: 60%;
+    }
+    .para-30>h3{
+        font-size: 25px;
+line-height: 33px;
+color: #ffffff;
+font-weight: 400;
+font-family: "Poppins";
+margin-bottom: 10px;
+position: absolute;
+top: 492%;
+left: 60%;
+
+
+
+    }
+    .para-30>img{
+       
+        position: absolute;
+        left: 60%;
+        top: 500%;
+        height: 70px;
+        
+        
+        
+    }
+    .para-31>img{
+        position: absolute;
+        left: 60%;
+        top: 513%;
+        height: 70px;
+       
+        
+
+    }
+   
+    .para-32>img{
+       
+        position: absolute;
+        right: 20%;
+        top: 186%;
+        opacity: 0.570;
+width: 400px;
+height: 400px;
+background-color: rgba(218,172,0,0.5686274509803921);
+        
+    }
+    .para-33>img{
+       
+       position: absolute;
+       right: 20%;
+       top: 65%;
+       opacity: 0.577;
+width: 300px;
+height: 300px;
+background-color: rgba(240, 190, 9, 0.569);
+       
+   }
+   
+
+    
+
+
+   
+    
+
+        </style>
+
+   
+<body>
+    <div class="navbar">
+        <div class="logo"></div>
+        <div class="link">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <div class="search-bar-1">
+                <input type="text" name="" id="" placeholder="Search..">
+            </div>
+            <div class="search-bar-2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+
+     
+    <div class="sec-1">
+        <div class="sub-1">
+            <div class="para-1">
+                <p>
+                    First i wanted to be a veterian
+                </p>
+            </div>
+            <div class="para-2">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic sunt enim eos consequatur quaerat. Impedit incidunt expedita modi dicta reprehenderit, facilis beatae? Beatae, suscipit rem saepe laudantium praesentium exercitationem corrupti.
+                </p>
+            </div>
+            <div class="para-3">
+                <button class="btn-1"> Contact Us </button>
+                <button class="btn-2"> Our Service</button>
+            </div>
+        </div>
+        <div class="sec-2">
+            <div class="sub-2">
+               <img src="../dog.ss.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sec-3">
+        <div class="sub-3">
+            <div class="para-4">
+                <p>
+                    As a veterian and lover of animals.
+                </p>
+            </div>
+            <div class="para-5">
+                <p>
+                    Lorem ipsum available but the majorty suffored alteration in some form, by humour randomised words.
+                </p>
+            </div>
+            <div class="para-6">
+                <button class="btn-3">Our Service</button>
+            </div>
+            <div class="para-33">
+                <div class="box=14"></div>
+                <img src="../dogcare.jpg2.png">
+                </div>
+            </div>
+        
+           
+        </div>
+        </div>
+
+
+        <div class="sec-5">
+            <div class="sub-4">
+                <div class="para-7">
+                    <p>
+                        Tittle Here
+                    </p>
+                    <div class="para-8">
+                        <p>
+                            Lorem Ipsum available, but the majority have<br>
+                             suffuerd alteration in same form.
+                        </p>
+                        <div class="box-1" >
+                            <img src="../nurse-1.png">
+
+                            <div class="box-2">
+                         <img src="../nurse-2.png">
+                             <div class="box-3">
+                         <img src="../nurse-3.png">
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+            </div>
+            </div>
+
+
+            <div class="sec-6">
+                <div class="sub-5">
+                    <div class="para-9">
+                        <p>
+                            As a veterian and lover of animals.
+                        </p>
+                    </div>
+                    <div class="para-10">
+                        <p>
+                            Lorem ipsum available but the majorty suffored alteration in some form, by humour randomised words.
+                        </p>
+                    </div>
+                    <div class="para-11">
+                        <button class="btn-3">Our Service</button>
+                    </div>
+                   
+                    <div class="para-32">
+                        <div class="box=13"></div>
+                        <img src="../eardog-.png">
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="sec-7">
+                    <div class="sub-6">
+                        <div class="para-12">
+                            <p>
+                                Tittle Here
+                            </p>
+                            </div>
+                            <div class="para-13">
+                                <p>
+                                    Lorem ipsum avilable, but the majority have suffered alternation in same form.
+                                </p>
+                            </div>
+                            <div class="box-4">
+                                <img src="../dog-1.png">
+                                <div class="price">
+                                    <span class="original">$50</span>
+                                    <span class="discounted">$30</span>
+                                </div>
+                                <button class="buy-now">Buy Now</button>
+                            </div>
+                            <div class="box-5">
+                                <img src="../dog-2.png">
+                                <div class="price2">
+                                    <span class="originl">$40</span>
+                                    <span class="discounted">$25</span>
+                                </div>
+                                <button class="buy-now2">Buy Now</button>
+                            </div>
+        
+                            <div class="box-6">
+                                <img src="../dog-3.png">
+                                <div class="price3">
+                                    <span class="originl">$40</span>
+                                    <span class="discounted">$25</span>
+                                </div>
+                                <button class="buy-now3">Buy Now</button>
+                            </div>
+                    </div>
+                </div>
+                
+        
+                <div class="sec-8">
+                    <div class="sub-7">
+                        <div class="para-14">
+                            <p>The Vetcare Team</p>
+                        </div>
+                        <div class="para-15">
+                            <p> Lorem ipsum avilable, but the majority have suffered alternation in same form.</p>
+                        </div>
+                        <div class="box-7">
+                            <img src="../jennifer-1.png">
+                            <div class="name">
+                                <span class="name">Jennifer Mullen</span><br>
+                                <span class="nameA">Ventinere</span>
+                            </div>
+                            </div>
+                            <div class="box-8">
+                                <img src="../jennifer-2.png">
+                                <div class="name2">
+                                    <span class="name">Shrreen Collines</span><br>
+                                    <span class="nameB">Admistration</span>
+                                </div>
+                                </div>
+        
+                                <div class="box-9">
+                                    <img src="../jennifer-3.png">
+                                    <div class="name3">
+                                        <span class="name">Jennifer Mullen</span><br>
+                                        <span class="nameC">Ventinery</span>
+                                    </div>
+                                    </div>
+                    </div>
+                </div>
+                
+        
+        
+                <div class="sec-9">
+                    <div class="sub-8">
+                        <div class="para-16">
+                            <p>Recent Posts</p>
+                        </div>
+                        <div class="para-17">
+                        <p>Lorem ipsum avilable, but the majority have suffered alternation in same form.</p>
+                        </div>
+                        <div class="box-10">
+                            <img src="../photos/nurse-1.jpg">
+                            <p>As a Vetiterain and animal lover</p>
+                            <DIV CLASS="para-18">
+                                FEBRUARY 20, 2020
+                            </DIV>
+                            <div class="para-19">
+                             <p>  Lorem ipusm available, but the majority have sufferd alternation in same form.</p>
+                             </div>
+                             <div class="para-20">
+                             <p>Read More+</p>
+                            </div>
+        
+        
+                            <div class="box-11">
+                                <img src="../photos/nurse today 1.jpg">
+                                <p>As a Vetiterain and animal lover</p>
+                                <DIV CLASS="para-21">
+                                    FEBRUARY 20, 2020
+                                </DIV>
+                                <div class="para-22">
+                                 <p>  Lorem ipusm available, but the majority have sufferd alternation in same form.</p>
+                                 </div>
+                                 <div class="para-23">
+                                 <p>Read More+</p>
+                                </div>
+                                <div class="box-12">
+                                    <img src="../photos/today 2.jpg">
+                                    <p>As a Vetiterain and animal lover</p>
+                                    <DIV CLASS="para-24">
+                                        FEBRUARY 20, 2020
+                                    </DIV>
+                                    <div class="para-25">
+                                     <p>  Lorem ipusm available, but the majority have sufferd alternation in same form.</p>
+                                     </div>
+                                     <div class="para-26">
+                                     <p>Read More+</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="sec-10">
+                    <div class="sub-9">
+                        <div class="para-27">
+                            <h1>About</h1><br>
+                            <h3>History</h3><br>
+                            <h3>Our Guidlines</h3><br>
+                            <h3>Our Team</h3><br>
+                            <h3>Terms and Conditions</h3><br>
+                            <h3>Privacy Policy</h3><br>
+                        
+                        <div class="para-28">
+                            <h1>Services</h1><br>
+                            <h3>How to Order</h3><br>
+                            <h3>Our Product</h3><br>
+                            <h3>Our Satus</h3><br>
+                            <h3>Promo</h3><br>
+                            <h3>Payment Method</h3><br>
+                        </div>
+        
+                        <div class="para-29">
+                            <p>Title Here</p>
+                            <div class="para-30">
+                                <h3>Lorem Ipums available, but the majority</h3>
+                                <img src="../photos/today ss.png">
+                                <div class="para-31">
+                                <img src="../photos/Screenshot 2024-12-05 195506.png">
+                                </div>
+                            </div>
+                        </div>
+        
+        
+                    </div>
+        
+                </div>
+                
+                
+                
+            
+        
+                         
+                    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                               
+                               
+                               
+                          
+        
+                
+        
+                
+        
+        
+                    </div>
+                    </div>
+               
+        
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+</body>
+</html>
